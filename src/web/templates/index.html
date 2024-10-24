@@ -3,7 +3,14 @@
 {% block content %}
 
 <h1> Welcome to QuickStatements 3.0 </h1>
-
+<style>
+body button,
+body input[type="submit"],
+body a[role="button"] {
+  background-color: blue !important;
+  color: white; 
+}
+</style>
 <article>
   <a role="button" href="{% url 'new_batch' %}"> New batch </a>
 </article>
